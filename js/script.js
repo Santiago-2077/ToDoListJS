@@ -4,7 +4,7 @@ function agregarTarea() {
     let nuevaTareaTexto = document.getElementById("nuevaTarea").value;
 
     //Validamos que el valor no sea vacío
-    if (nuevaTareaTexto === " ") {
+    if (nuevaTareaTexto.trim() === "") {
         alert("Por favor, ingresa una tarea");
         return;
     }
